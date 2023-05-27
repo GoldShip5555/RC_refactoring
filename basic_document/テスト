@@ -1,0 +1,13 @@
+#include <PWMServo.h>
+
+PWMServo servo1;
+
+void setup() {
+  // サーボの初期化
+  servo1 = PWMServo_init();
+}
+
+void loop() {
+  // サーボモーターの角度を90度に設定
+  servo1.write(90);
+}
